@@ -20,7 +20,7 @@ public class Permissions extends org.jooq.impl.TableImpl<org.cobraparser.db.tabl
   /**
    * The reference instance of <code>PUBLIC.PERMISSIONS</code>
    */
-  public static final org.cobraparser.db.tables.Permissions PERMISSIONS = new org.cobraparser.db.tables.Permissions();
+  public static final Permissions PERMISSIONS = new Permissions();
 
   /**
    * The class holding records for this type
@@ -59,7 +59,7 @@ public class Permissions extends org.jooq.impl.TableImpl<org.cobraparser.db.tabl
    * Create an aliased <code>PUBLIC.PERMISSIONS</code> table reference
    */
   public Permissions(final String alias) {
-    this(alias, org.cobraparser.db.tables.Permissions.PERMISSIONS);
+    this(alias, Permissions.PERMISSIONS);
   }
 
   private Permissions(final String alias, final org.jooq.Table<org.cobraparser.db.tables.records.PermissionsRecord> aliased) {
@@ -91,14 +91,14 @@ public class Permissions extends org.jooq.impl.TableImpl<org.cobraparser.db.tabl
    * {@inheritDoc}
    */
   @Override
-  public org.cobraparser.db.tables.Permissions as(final String alias) {
-    return new org.cobraparser.db.tables.Permissions(alias, this);
+  public Permissions as(final String alias) {
+    return new Permissions(alias, this);
   }
 
   /**
    * Rename this table
    */
-  public org.cobraparser.db.tables.Permissions rename(final String name) {
-    return new org.cobraparser.db.tables.Permissions(name, null);
+  public Permissions rename(final String name) {
+    return new Permissions(name, null);
   }
 }

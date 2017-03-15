@@ -95,12 +95,12 @@ public interface HtmlRendererContext {
    * @param enctype
    *          The encoding type.
    * @param formInputs
-   *          An array of {@link org.cobraparser.html.FormInput} instances.
+   *          An array of {@link FormInput} instances.
    */
   public void submitForm(String method, @NonNull URL action, String target, String enctype, FormInput[] formInputs);
 
   /**
-   * Creates a {@link org.cobraparser.html.BrowserFrame} instance.
+   * Creates a {@link BrowserFrame} instance.
    */
   public BrowserFrame createBrowserFrame();
 
@@ -249,7 +249,7 @@ public interface HtmlRendererContext {
    *          The features of the new window (same as in Javascript open
    *          method).
    * @param replace
-   * @return A new {@link org.cobraparser.html.HtmlRendererContext} instance.
+   * @return A new {@link HtmlRendererContext} instance.
    * @deprecated Use {@link #open(URL, String, String, boolean)} instead.
    */
   @Deprecated
@@ -266,7 +266,7 @@ public interface HtmlRendererContext {
    *          The features of the new window (same as in Javascript open
    *          method).
    * @param replace
-   * @return A new {@link org.cobraparser.html.HtmlRendererContext} instance.
+   * @return A new {@link HtmlRendererContext} instance.
    */
   public HtmlRendererContext open(@NonNull URL url, String windowName, String windowFeatures, boolean replace);
 
@@ -349,7 +349,7 @@ public interface HtmlRendererContext {
    * Sets the context that opened the current frame/window.
    *
    * @param opener
-   *          A {@link org.cobraparser.html.HtmlRendererContext}.
+   *          A {@link HtmlRendererContext}.
    */
   public void setOpener(HtmlRendererContext opener);
 

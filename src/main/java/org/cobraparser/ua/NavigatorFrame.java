@@ -306,11 +306,11 @@ public interface NavigatorFrame {
    *           content of the frame.
    * @see org.cobraparser.clientlet.ClientletContext#setResultingContent(Component)
    */
-  public void replaceContent(org.cobraparser.clientlet.ClientletResponse response, org.cobraparser.clientlet.ComponentContent component);
+  public void replaceContent(org.cobraparser.clientlet.ClientletResponse response, ComponentContent component);
 
   /**
    * A simple alternative to
-   * {@link #replaceContent(org.cobraparser.clientlet.ClientletResponse, org.cobraparser.clientlet.ComponentContent)}
+   * {@link #replaceContent(org.cobraparser.clientlet.ClientletResponse, ComponentContent)}
    * provided for convenience.
    *
    * @param component

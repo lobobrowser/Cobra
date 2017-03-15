@@ -108,7 +108,7 @@ public class DocumentBuilderImpl extends DocumentBuilder {
    *
    * @param is
    *          The input source, which may be an instance of
-   *          {@link org.cobraparser.html.parser.InputSourceImpl}.
+   *          {@link InputSourceImpl}.
    * @see #createDocument(InputSource)
    */
   @Override
@@ -124,7 +124,7 @@ public class DocumentBuilderImpl extends DocumentBuilder {
    *
    * @param is
    *          The input source, which may be an instance of
-   *          {@link org.cobraparser.html.parser.InputSourceImpl}. The input
+   *          {@link InputSourceImpl}. The input
    *          source must provide either an input stream or a reader.
    * @see HTMLDocumentImpl#load()
    */

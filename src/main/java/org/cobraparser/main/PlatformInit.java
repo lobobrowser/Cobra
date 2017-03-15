@@ -307,7 +307,7 @@ public class PlatformInit {
    * @param initConsole
    *          If this parameter is <code>true</code>, standard output is
    *          redirected to a browser console. See
-   *          {@link org.cobraparser.gui.ConsoleModel}.
+   *          {@link ConsoleModel}.
    * @see #initSecurity()
    * @see #initProtocols()
    * @see #initExtensions()

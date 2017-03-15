@@ -25,7 +25,7 @@ package org.cobraparser.io;
 /**
  * A filter of managed files.
  *
- * @see org.cobraparser.io.ManagedFile#listFiles(ManagedFileFilter)
+ * @see ManagedFile#listFiles(ManagedFileFilter)
  * @author J. H. S.
  */
 public interface ManagedFileFilter {

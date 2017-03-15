@@ -28,7 +28,7 @@ import java.util.EventListener;
 /**
  * Listener of asynchronous results.
  *
- * @see org.cobraparser.async.AsyncResult
+ * @see AsyncResult
  * @author J. H. S.
  */
 public interface AsyncResultListener<TResult> extends EventListener {

@@ -64,9 +64,14 @@ public class StorageManager implements Runnable {
   private static final String CONTENT_DIR = "content";
   private static final String SETTINGS_DIR = "settings";
   private static final StorageManager instance = new StorageManager();
+  public final String userDBPath;
+
+  //storage directories
   private final File storeDirectory;
   private final File cacheRootDirectory;
-  public final String userDBPath;
+  private final File settingsDirectory;
+  private final File contentDirectory;
+
 
   public static StorageManager getInstance() {
     return instance;
@@ -75,8 +80,23 @@ public class StorageManager implements Runnable {
   private StorageManager() {
     this.storeDirectory = LocalSecurityPolicy.STORE_DIRECTORY;
     this.cacheRootDirectory = new File(this.storeDirectory, CACHE_DIR);
+    this.settingsDirectory = new File(this.storeDirectory, SETTINGS_DIR);
+    this.contentDirectory = new File(this.storeDirectory, CONTENT_DIR);
+
     if (!this.storeDirectory.exists()) {
       this.storeDirectory.mkdirs();
+    }
+
+    if (!this.cacheRootDirectory.exists()) {
+      this.cacheRootDirectory.mkdir();
+    }
+
+    if (!this.settingsDirectory.exists()) {
+      this.settingsDirectory.mkdir();
+    }
+
+    if (!this.contentDirectory.exists()) {
+      this.contentDirectory.mkdir();
     }
 
     userDBPath = new File(storeDirectory, "user.h2").getAbsolutePath();
@@ -104,7 +124,7 @@ public class StorageManager implements Runnable {
     final int tableCount = getTableCount(userDB);
 
     if (tableCount == 0) {
-      final InputStream schemaStream = getClass().getResourceAsStream("/info/gngr/schema.sql");
+      final InputStream schemaStream = getClass().getResourceAsStream("/sql/schema.sql");
       try (
         final Scanner scanner = new Scanner(schemaStream, "UTF-8")) {
         final String text = scanner.useDelimiter("\\A").next();
@@ -243,7 +263,7 @@ public class StorageManager implements Runnable {
     try (
         final InputStream in = new FileInputStream(file);
         final BufferedInputStream bin = new BufferedInputStream(in);
-        final ObjectInputStream ois = new ClassLoaderObjectInputStream(bin, classLoader);) {
+        final ObjectInputStream ois = new ClassLoaderObjectInputStream(bin, classLoader)) {
       return (Serializable) ois.readObject();
     } catch (final InvalidClassException ice) {
       ice.printStackTrace();

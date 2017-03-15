@@ -20,7 +20,7 @@ public class Cookies extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
   /**
    * The reference instance of <code>PUBLIC.COOKIES</code>
    */
-  public static final org.cobraparser.db.tables.Cookies COOKIES = new org.cobraparser.db.tables.Cookies();
+  public static final Cookies COOKIES = new Cookies();
 
   /**
    * The class holding records for this type
@@ -89,7 +89,7 @@ public class Cookies extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
    * Create an aliased <code>PUBLIC.COOKIES</code> table reference
    */
   public Cookies(final String alias) {
-    this(alias, org.cobraparser.db.tables.Cookies.COOKIES);
+    this(alias, Cookies.COOKIES);
   }
 
   private Cookies(final String alias, final org.jooq.Table<org.cobraparser.db.tables.records.CookiesRecord> aliased) {
@@ -121,14 +121,14 @@ public class Cookies extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
    * {@inheritDoc}
    */
   @Override
-  public org.cobraparser.db.tables.Cookies as(final String alias) {
-    return new org.cobraparser.db.tables.Cookies(alias, this);
+  public Cookies as(final String alias) {
+    return new Cookies(alias, this);
   }
 
   /**
    * Rename this table
    */
-  public org.cobraparser.db.tables.Cookies rename(final String name) {
-    return new org.cobraparser.db.tables.Cookies(name, null);
+  public Cookies rename(final String name) {
+    return new Cookies(name, null);
   }
 }

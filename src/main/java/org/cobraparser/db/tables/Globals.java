@@ -20,7 +20,7 @@ public class Globals extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
   /**
    * The reference instance of <code>PUBLIC.GLOBALS</code>
    */
-  public static final org.cobraparser.db.tables.Globals GLOBALS = new org.cobraparser.db.tables.Globals();
+  public static final Globals GLOBALS = new Globals();
 
   /**
    * The class holding records for this type
@@ -59,7 +59,7 @@ public class Globals extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
    * Create an aliased <code>PUBLIC.GLOBALS</code> table reference
    */
   public Globals(final String alias) {
-    this(alias, org.cobraparser.db.tables.Globals.GLOBALS);
+    this(alias, Globals.GLOBALS);
   }
 
   private Globals(final String alias, final org.jooq.Table<org.cobraparser.db.tables.records.GlobalsRecord> aliased) {
@@ -91,14 +91,14 @@ public class Globals extends org.jooq.impl.TableImpl<org.cobraparser.db.tables.r
    * {@inheritDoc}
    */
   @Override
-  public org.cobraparser.db.tables.Globals as(final String alias) {
-    return new org.cobraparser.db.tables.Globals(alias, this);
+  public Globals as(final String alias) {
+    return new Globals(alias, this);
   }
 
   /**
    * Rename this table
    */
-  public org.cobraparser.db.tables.Globals rename(final String name) {
-    return new org.cobraparser.db.tables.Globals(name, null);
+  public Globals rename(final String name) {
+    return new Globals(name, null);
   }
 }

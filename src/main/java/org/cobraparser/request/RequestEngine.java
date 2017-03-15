@@ -544,7 +544,7 @@ public final class RequestEngine {
       }
 
       public void processResponse(final ClientletResponse response) throws ClientletException, IOException {
-        final byte[] bytes = org.cobraparser.util.io.IORoutines.load(response.getInputStream(), 4096);
+        final byte[] bytes = IORoutines.load(response.getInputStream(), 4096);
         boxed.setObject(bytes);
       }
     });

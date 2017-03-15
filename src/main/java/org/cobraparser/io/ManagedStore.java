@@ -25,12 +25,12 @@ package org.cobraparser.io;
 /**
  * Represents client-side storage with quota restrictions. A clientlet engine
  * will typically provide an instance of this interface per host. A manged store
- * manages instances of {@link org.cobraparser.io.ManagedFile}. The path to a
+ * manages instances of {@link ManagedFile}. The path to a
  * managed file is a Unix-style path, using forward slashes, with '/'
  * representing the root directory of the managed store. So each managed store
  * is similar to a small file system accessible only by a particular domain.
  *
- * @see org.cobraparser.io.ManagedFile
+ * @see ManagedFile
  * @see org.cobraparser.clientlet.ClientletContext#getManagedStore()
  */
 public interface ManagedStore {

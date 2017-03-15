@@ -62,13 +62,13 @@ public class LocalSecurityPolicy extends Policy {
   private static final String PATH_SEPARATOR = System.getProperty("path.separator");
 
   /**
-   * Directory where gngr should save files. Any files saved here have
+   * Directory where LoboBrowser should save files. Any files saved here have
    * privileges of a remote file.
    */
   public static final File STORE_DIRECTORY;
 
   private static final String DEFAULT_PROFILE = "default";
-  private static final String STORE_DIR_NAME = ".gngr";
+  private static final String STORE_DIR_NAME = ".lobobrowser";
   private static final String STORE_DIRECTORY_CANONICAL;
   private static final LocalSecurityPolicy instance = new LocalSecurityPolicy();
   private static final Collection<Permission> BASE_PRIVILEGE = new LinkedList<>();

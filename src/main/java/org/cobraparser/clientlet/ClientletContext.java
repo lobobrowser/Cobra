@@ -77,12 +77,12 @@ public interface ClientletContext {
   /**
    * Undocumented.
    */
-  public org.cobraparser.clientlet.ContentBuffer createContentBuffer(String contentType, byte[] content);
+  public ContentBuffer createContentBuffer(String contentType, byte[] content);
 
   /**
    * Undocumented.
    */
-  public org.cobraparser.clientlet.ContentBuffer createContentBuffer(String contentType, String content, String encoding)
+  public ContentBuffer createContentBuffer(String contentType, String content, String encoding)
       throws UnsupportedEncodingException;
 
   /**

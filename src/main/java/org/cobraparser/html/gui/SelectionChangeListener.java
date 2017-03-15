@@ -27,7 +27,7 @@ import java.util.EventListener;
  * Receives selection change events.
  *
  * @author J. H. S.
- * @see org.cobraparser.html.gui.HtmlPanel#addSelectionChangeListener(SelectionChangeListener)
+ * @see HtmlPanel#addSelectionChangeListener(SelectionChangeListener)
  */
 public interface SelectionChangeListener extends EventListener {
   /**
