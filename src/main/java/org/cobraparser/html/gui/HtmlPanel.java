@@ -48,7 +48,7 @@ import org.cobraparser.html.renderer.FrameContext;
 import org.cobraparser.html.renderer.NodeRenderer;
 import org.cobraparser.html.renderer.RenderableSpot;
 import org.cobraparser.html.style.RenderState;
-import org.cobraparser.main.DefferedLayoutSupport;
+import org.cobraparser.util.gui.DefferedLayoutSupport;
 import org.cobraparser.ua.UserAgentContext;
 import org.cobraparser.util.EventDispatch2;
 import org.cobraparser.util.gui.WrapperLayout;

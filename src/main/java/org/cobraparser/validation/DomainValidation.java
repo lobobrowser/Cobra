@@ -1,15 +1,14 @@
-package org.cobraparser.request;
+package org.cobraparser.validation;
+
+import de.malkusch.whoisServerList.publicSuffixList.PublicSuffixList;
+import de.malkusch.whoisServerList.publicSuffixList.PublicSuffixListFactory;
+import org.cobraparser.util.Urls;
+import org.eclipse.jdt.annotation.NonNull;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Collection;
 import java.util.LinkedList;
-
-import org.eclipse.jdt.annotation.NonNull;
-import org.cobraparser.util.Urls;
-
-import de.malkusch.whoisServerList.publicSuffixList.PublicSuffixList;
-import de.malkusch.whoisServerList.publicSuffixList.PublicSuffixListFactory;
 
 public final class DomainValidation {
 

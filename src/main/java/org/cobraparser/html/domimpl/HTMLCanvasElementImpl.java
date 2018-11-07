@@ -40,9 +40,9 @@ import java.util.Stack;
 
 import javax.imageio.ImageIO;
 
+import org.cobraparser.CobraParser;
 import org.cobraparser.html.js.NotGetterSetter;
 import org.cobraparser.js.HideFromJS;
-import org.cobraparser.main.PlatformInit;
 import org.cobraparser.util.gui.ColorFactory;
 import org.mozilla.javascript.typedarrays.NativeUint8ClampedArray;
 import org.w3c.dom.html.HTMLElement;
@@ -117,7 +117,7 @@ public class HTMLCanvasElementImpl extends HTMLAbstractUIElement implements HTML
     if (image != null) {
 
       // Draw a grid if debugging
-      if (PlatformInit.getInstance().debugOn) {
+      if (CobraParser.isDebugOn()) {
         final Graphics newG = g.create(offsetX, offsetY, computedWidth, computedHeight);
         try {
           drawGrid(newG);

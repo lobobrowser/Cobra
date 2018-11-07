@@ -22,14 +22,14 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
+import org.cobraparser.ua.RequestType;
+import org.eclipse.jdt.annotation.NonNull;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.net.URL;
 import java.util.Iterator;
-
-import org.eclipse.jdt.annotation.NonNull;
-import org.cobraparser.ua.RequestType;
 
 /**
  * Represents a URL response such as an HTTP or file protocol response.

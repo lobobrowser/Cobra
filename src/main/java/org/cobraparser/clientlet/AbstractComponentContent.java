@@ -22,7 +22,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
-import java.awt.Component;
+import java.awt.*;
 
 /**
  * Abstract implementation of {@link ComponentContent}. It is recommended that

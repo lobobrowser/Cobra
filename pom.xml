@@ -58,13 +58,6 @@
                 <configuration>
                     <outputDirectory>${basedir}/target</outputDirectory>
                     <finalName>${project.artifactId}</finalName>
-                    <archive>
-                        <manifest>
-                            <!--<addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>-->
-                            <mainClass>org.cobraparser.main.EntryPoint</mainClass>
-                        </manifest>
-                    </archive>
                 </configuration>
             </plugin>
         </plugins>

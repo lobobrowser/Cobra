@@ -28,7 +28,7 @@ import org.cobraparser.ua.NavigatorExtensionContext;
  * Interface implemented in order to handle web responses, typically by checking
  * the content types.
  *
- * @see NavigatorExtensionContext#addClientletSelector(ClientletSelector)
+ * @see NavigatorExtensionContext#addClientletSelector(org.cobraparser.clientlet.ClientletSelector)
  */
 public interface ClientletSelector {
   /**

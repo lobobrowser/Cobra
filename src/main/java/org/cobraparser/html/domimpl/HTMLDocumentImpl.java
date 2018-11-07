@@ -65,7 +65,7 @@ import org.cobraparser.html.style.RenderState;
 import org.cobraparser.html.style.StyleElements;
 import org.cobraparser.html.style.StyleSheetRenderState;
 import org.cobraparser.js.HideFromJS;
-import org.cobraparser.request.DomainValidation;
+import org.cobraparser.validation.DomainValidation;
 import org.cobraparser.ua.ImageResponse;
 import org.cobraparser.ua.NetworkRequest;
 import org.cobraparser.ua.UserAgentContext;

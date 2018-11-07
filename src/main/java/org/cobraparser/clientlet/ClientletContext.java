@@ -22,17 +22,17 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
-import java.awt.Component;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-
-import org.eclipse.jdt.annotation.NonNull;
 import org.cobraparser.io.ManagedStore;
 import org.cobraparser.ua.NavigatorFrame;
 import org.cobraparser.ua.NavigatorProgressEvent;
 import org.cobraparser.ua.ProgressType;
 import org.cobraparser.ua.UserAgent;
+import org.eclipse.jdt.annotation.NonNull;
+
+import java.awt.*;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
 
 /**
  * The context in which a clientlet processes a web or file response.

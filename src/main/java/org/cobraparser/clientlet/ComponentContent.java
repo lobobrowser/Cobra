@@ -22,12 +22,13 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
+
 /**
  * Content set by a {@link Clientlet}. To ensure backward compatibility, it is
  * recommended that {@link AbstractComponentContent} be extended instead of
  * implementing this interface whenever possible.
  *
- * @see ClientletContext#setResultingContent(ComponentContent)
+ * @see ClientletContext#setResultingContent(org.cobraparser.clientlet.ComponentContent)
  */
 public interface ComponentContent {
   public default void disableRenderHints() {

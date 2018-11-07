@@ -22,7 +22,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
-import java.awt.Component;
+import java.awt.*;
 
 public abstract class SimpleComponentContent extends AbstractComponentContent {
   private final Component component;

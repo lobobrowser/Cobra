@@ -22,12 +22,12 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.clientlet;
 
-import java.net.URL;
-
-import org.eclipse.jdt.annotation.NonNull;
 import org.cobraparser.ua.ParameterInfo;
 import org.cobraparser.ua.RequestType;
 import org.cobraparser.ua.UserAgent;
+import org.eclipse.jdt.annotation.NonNull;
+
+import java.net.URL;
 
 /**
  * A URL request such as a HTTP, file or FTP request.
