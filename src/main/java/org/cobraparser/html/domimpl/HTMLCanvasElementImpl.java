@@ -117,7 +117,7 @@ public class HTMLCanvasElementImpl extends HTMLAbstractUIElement implements HTML
     if (image != null) {
 
       // Draw a grid if debugging
-      if (CobraParser.isDebugOn()) {
+      if (CobraParser.isDebugOn) {
         final Graphics newG = g.create(offsetX, offsetY, computedWidth, computedHeight);
         try {
           drawGrid(newG);
