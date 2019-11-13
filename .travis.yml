@@ -1,6 +1,5 @@
 language: java
-jdk:
-  - openjdk8
+jdk: openjdk8
 
 before_install:
 - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
@@ -23,6 +22,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: lobobrowser/Cobra
+    tags: true
   name: $project_version
 
 # send slack notification
