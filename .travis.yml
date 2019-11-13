@@ -1,4 +1,6 @@
 language: java
+jdk:
+  - openjdk8
 
 before_install:
 - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
@@ -10,8 +12,7 @@ script: mvn clean deploy --settings .maven.xml -DskipTests=true -B -U -Possrh-de
 
 before_deploy:
 - mvn help:evaluate -N -Dexpression=project.version|grep -v '\['
-- export project_version=$(mvn help:evaluate -N -Dexpression=project.version|grep
-  -v '\[')
+- export project_version=$(mvn help:evaluate -N -Dexpression=project.version|grep -v '\[')
 
 deploy:
   provider: releases
