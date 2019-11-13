@@ -22,6 +22,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package org.cobraparser.ua;
 
+import java.util.UUID;
+
 /**
  * Represents the user agent, browser or clientlet engine.
  *
@@ -68,5 +70,5 @@ public interface UserAgent {
   // * to produce it is well known. The session ID does not persist
   // * if the browser exits.
   // */
-  // public String getSessionID(java.net.URL url);
+  public UUID getSessionID(java.net.URL url);
 }

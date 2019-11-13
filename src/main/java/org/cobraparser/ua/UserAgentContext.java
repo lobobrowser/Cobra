@@ -9,7 +9,7 @@ import java.net.URL;
  * A simple implementation of this interface is provided in
  * {@link org.cobraparser.html.test.SimpleUserAgentContext}.
  *
- * @see HtmlRendererContext#getUserAgentContext()
+ * @see org.cobraparser.html.HtmlRendererContext#getUserAgentContext()
  * @see org.cobraparser.html.parser.DocumentBuilderImpl#DocumentBuilderImpl(UserAgentContext)
  */
 public interface UserAgentContext {
