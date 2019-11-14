@@ -6,7 +6,7 @@
 
     <groupId>org.cobraparser</groupId>
     <artifactId>Cobra</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Cobra</name>
     <description>Cobra is the rendering engine designed for LoboBrowser</description>
