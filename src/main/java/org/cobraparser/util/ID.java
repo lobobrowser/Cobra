@@ -40,7 +40,7 @@ public class ID {
   private static final Random RANDOM3;
 
   // Disabling. Don't like the feel of this:
-  // private static final long globalProcessID;
+  private static final long globalProcessID;
 
   private static final Logger logger = Logger.getLogger(ID.class.getName());
 
@@ -58,7 +58,8 @@ public class ID {
       logger.log(Level.WARNING, "Unable to get local host information.", err);
       addressHashCode = ID.class.hashCode();
     }
-    // globalProcessID = time ^ nanoTime ^ freeMemory ^ addressHashCode;
+
+    globalProcessID = time ^ nanoTime ^ freeMemory ^ addressHashCode;
     RANDOM1 = new Random(time);
     RANDOM2 = new Random(nanoTime);
     RANDOM3 = new Random(addressHashCode ^ freeMemory);
@@ -102,11 +103,9 @@ public class ID {
   /**
    * Gets a process ID that is nearly guaranteed to be globally unique.
    */
-  /*
   public static long getGlobalProcessID() {
     return globalProcessID;
   }
-   */
 
   public static int random(final int min, final int max) {
     if (max <= min) {
