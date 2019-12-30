@@ -6,7 +6,7 @@
 
     <groupId>org.cobraparser</groupId>
     <artifactId>Cobra</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <name>Cobra</name>
     <description>Cobra is the rendering engine designed for LoboBrowser</description>
@@ -21,8 +21,8 @@
 
     <developers>
         <developer>
-            <name>Eric</name>
-            <email>eric@xaosia.com</email>
+            <name>XAOS Interactive</name>
+            <email>info@xaosia.com</email>
         </developer>
     </developers>
 
@@ -97,13 +97,25 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>1.5</version>
+                <version>3.2.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
