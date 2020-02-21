@@ -53,12 +53,15 @@ public class Executor {
 
     if (!ctx.isSealed()) {
       ctx.setOptimizationLevel(ucontext.getScriptingOptimizationLevel());
+      ctx.setLanguageVersion(Context.VERSION_ES6);
+
       if (prev == null) {
         // If there was a previous context, this one must be nested.
         // We still need to create a context because of exit() but
         // we cannot set a new security controller.
         ctx.setSecurityController(new SecurityControllerImpl(codeSource, ucontext.getSecurityPolicy()));
       }
+
       // Sealing is recommended for untrusted scripts
       ctx.seal(null);
     }
